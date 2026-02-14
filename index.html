@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>San Valentín 💖</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff4e8a, #ff9acb);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            color: white;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 25px rgba(0,0,0,0.3);
+            max-width: 500px;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            background-color: white;
+            color: #ff4e8a;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff4e8a;
+            color: white;
+        }
+
+        .heart {
+            font-size: 50px;
+            animation: latido 1s infinite;
+        }
+
+        @keyframes latido {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="heart">💖</div>
+        <h1>Feliz San Valentín</h1>
+        <p>Aladana ❤️</p>
+        <p>Si quieres pasar este día conmigo...</p>
+        <h2>¿Te gustaría compartir este día especial conmigo?</h2>
