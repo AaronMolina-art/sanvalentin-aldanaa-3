@@ -1,76 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>San Valentín 💖</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #ff4e8a, #ff9acb);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            color: white;
-        }
+<meta charset="UTF-8">
+<title>Feliz San Valentín 💖</title>
 
-        .card {
-            background: rgba(255, 255, 255, 0.15);
-            padding: 40px;
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 0 25px rgba(0,0,0,0.3);
-            max-width: 500px;
-        }
+<style>
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#ff4e8a,#ff9acb);
+font-family:Arial, sans-serif;
+color:white;
+text-align:center;
+}
 
-        h1 {
-            font-size: 40px;
-            margin-bottom: 20px;
-        }
+.card{
+background:rgba(255,255,255,0.15);
+padding:40px;
+border-radius:20px;
+box-shadow:0 0 25px rgba(0,0,0,0.3);
+max-width:600px;
+backdrop-filter:blur(10px);
+}
 
-        p {
-            font-size: 20px;
-        }
+h1{
+font-size:38px;
+margin-bottom:20px;
+}
 
-        button {
-            margin-top: 20px;
-            padding: 12px 25px;
-            font-size: 18px;
-            border: none;
-            border-radius: 30px;
-            cursor: pointer;
-            background-color: white;
-            color: #ff4e8a;
-            transition: 0.3s;
-        }
+.mensaje{
+font-size:18px;
+line-height:1.6;
+margin-top:20px;
+}
 
-        button:hover {
-            background-color: #ff4e8a;
-            color: white;
-        }
+button{
+margin-top:25px;
+padding:12px 25px;
+border:none;
+border-radius:25px;
+cursor:pointer;
+font-size:18px;
+background:white;
+color:#ff4e8a;
+transition:0.3s;
+}
 
-        .heart {
-            font-size: 50px;
-            animation: latido 1s infinite;
-        }
+button:hover{
+background:#ff4e8a;
+color:white;
+}
 
-        @keyframes latido {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.2); }
-            100% { transform: scale(1); }
-        }
-    </style>
+</style>
 </head>
+
 <body>
 
-    <div class="card">
-        <div class="heart">💖</div>
-        <h1>Feliz San Valentín</h1>
-        <p>Aldana ❤️</p>
-        <p>Si quieres pasar este día conmigo...</p>
-        <h2>¿Te gustaría compartir este día especial conmigo?.. y luego xupadita jsjsj te amo mucho bonita. </h2>
+<div class="card">
+<h1>Feliz San Valentín 💖</h1>
+<p><strong>Aldana ❤️</strong></p>
 
+<button onclick="mostrarMensaje()">Haz click aquí</button>
 
+<div id="mensaje" class="mensaje"></div>
+</div>
+
+<script>
+function mostrarMensaje(){
+document.getElementById("mensaje").innerHTML =
+"Te amo mucho, corazón. Gracias por aguantarme siempre y por no aburrirte tan rápido de mí. Aunque siento que últimamente hay muchos problemas y ya no sé exactamente si estás cansada de mí o no; ya me lo contarás al ver este intento de página. No sé programar muy bien, pero lo estoy intentando por esto. Ojalá este 14 de febrero sea muy bonito para los dos y la pasemos juntos, siempre y cuando aceptes, Charlesita. Te amo infinitamente. 💖";
+}
+</script>
+
+</body>
+</html>
